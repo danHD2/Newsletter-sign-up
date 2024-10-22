@@ -1,6 +1,9 @@
 
 import './App.css'
 import { useState } from "react";
+import mobileImage from './assets/images/illustration-sign-up-mobile.svg';
+import desktopImage from './assets/images/illustration-sign-up-desktop.svg';
+import successImg from './assets/images/icon-success.svg';
 
 function App() {
 
@@ -64,10 +67,10 @@ function App() {
           </form>  
           </div>
           <div className='w-full max-w-md md:hidden block'>
-          <img className='w-full' src="/src/assets/images/illustration-sign-up-mobile.svg" alt="illustration" />
+          <img className='w-full' src={mobileImage} alt="illustration" />
         </div>
         <div className='hidden md:block'>
-          <img src="/src/assets/images/illustration-sign-up-desktop.svg" alt="illustration" />
+          <img src={desktopImage} alt="illustration" />
         </div>
           </div>
           </>
@@ -75,7 +78,7 @@ function App() {
           <div className='flex flex-col p-10 max-w-md justify-between md:justify-normal'>
             <div>
               <img
-                src='/src/assets/images/icon-success.svg'
+                src={successImg}
                 alt='success'
                 className='mb-6 w-12 mt-24 md:mt-0'
               />
